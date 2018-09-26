@@ -35,21 +35,20 @@ var Menu = {
 var arr = [43,544,22,32,132,15,254,42,52];
 
 
-
-function a(callback){
-	
+function sorT(callback,a,b){
+	console.log(a+b);
+	callback();
 }
 
-
-function b(){
-	return 3 + 4;
+function A(){
+	console.log("hi " + name);
 }
 
+sorT(A,5,10);
 
-var x = a(b);
 
 
-console.log(x);
+
 
 
 
