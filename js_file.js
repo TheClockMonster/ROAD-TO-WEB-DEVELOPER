@@ -36,7 +36,34 @@ var arr = [43,544,22,32,132,15,254,42,52];
 
 
 
+function a(callback){
+	
+}
 
+
+function b(){
+	return 3 + 4;
+}
+
+
+var x = a(b);
+
+
+console.log(x);
+
+
+
+
+
+
+
+
+
+
+
+
+// Callback-function, передается в функцию Array.sort()
+//Сравнение элементов массива по сумме их цифр
 function compareNum(a,b){
 	a = a + "";
 	b = b + "";
@@ -59,20 +86,6 @@ function compareNum(a,b){
 
 	return sumA - sumB;
 }
-
-arr.sort(compareNum);
-
-console.log(arr);
-
-
-
-
-
-
-
-
-
-
 
 
 //Сортирует массив numbers в обратном порядке
