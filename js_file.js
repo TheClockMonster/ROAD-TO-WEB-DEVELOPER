@@ -38,6 +38,7 @@ alert ("GIT TEST!");
 console.log("new modify");
 console.log("hi");
 console.log("new string");
+console.log("GG"); //gg
 
 
 
