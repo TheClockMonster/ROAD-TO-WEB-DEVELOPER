@@ -32,13 +32,38 @@ var Menu = {
 	weight: 5
 }
 
+var arr = [43,544,22,32,132,15,254,42,52];
 
 
-alert ("GIT TEST!");
-console.log("new modify");
-console.log("hi");
-console.log("new string");
-console.log("GG"); //gg
+
+
+function compareNum(a,b){
+	a = a + "";
+	b = b + "";
+
+	a = a.split("");
+	b = b.split("");
+
+	var sumA = 0;
+	var sumB = 0;
+	
+	for (var i = 0; i < a.length; i++){
+		sumA += +a[i];
+	}
+
+	for (var i = 0; i < b.length; i++){
+		sumB += +b[i];
+	}
+
+	
+
+	return sumA - sumB;
+}
+
+arr.sort(compareNum);
+
+console.log(arr);
+
 
 
 
