@@ -32,7 +32,18 @@ var Menu = {
 	weight: 5
 }
 
-var arr = [43,544,22,32,132,15,254,42,52];
+var Goo = {
+	width: 300,
+	height: 200,
+	content: "Italian food",
+	numberOfTitles: 20,
+	weight: 5
+}
+
+
+var date = new Date();
+
+date.setFullYear(2018,8,25);
 
 
 
@@ -42,13 +53,45 @@ var arr = [43,544,22,32,132,15,254,42,52];
 
 
 
+//Возвращает новый массив из длин элементов исходного
+function stringLenhgths(arr){
+	arr.map(function(item,i,arr){
+		return item.length;
+	});
+}
+
+//Возвращает массив, элементами которого являются
+//неповторяющиеся элементы исходного массива
+function unique(arr){
+	var Names = {};
+
+	names.forEach(function(item,i){
+		Names[item] = true;
+	});
+
+	return Object.keys(Names);
+}
 
 
 
+//Возвращает массив, исключающий анограммы из текущего массива
+function aclean(arr){
 
+	var listOfArrElements = []; 
 
+	arr.forEach(function(item){
+		var sortedKey = item.toLowerCase().split("").sort().join("");
+		listOfArrElements[sortedKey] = item;
+	});
 
+	var result = [];
 
+	for (var key in listOfArrElements){
+		result.push(listOfArrElements[key]);
+	}
+
+	return result;
+}
 
 
 
