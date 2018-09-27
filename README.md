@@ -31,8 +31,11 @@
 </ul>
 <hr>
 <br>
-<i>TYPING PRACTICE:</i><br>
-https://www.typingclub.com<br>
-https://www.keybr.com/
-
-
+<h3>Тренировка тайпинга</h3>
+<p>https://www.typingclub.com<br>
+https://www.keybr.com/</p>
+<hr>
+<br>
+<h3>Дополнительно</h3>
+<p>https://www.w3resource.com/javascript-exercises/<br>
+https://learn.javascript.ru/</p>
