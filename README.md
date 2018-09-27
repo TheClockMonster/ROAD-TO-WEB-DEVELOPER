@@ -4,9 +4,9 @@
 
 <h4 style = "color: green">ОСНОВЫ JAVASCRIPT:</h4>
 <ul>
-    <li>Введение в язык, типы данных, операторы <strong>+</strong></li>
+    <li>Введение в язык, типы данных, операторы <strong style = "font-size: 24px;">+</strong></li>
     <li>Способы взаимодействия с пользователем и основы работы Git</li>
-    <li>Условия и циклы <strong>+</strong></li>
+    <li>Условия и циклы <strong style = "font-size: 24px;">+</strong></li>
     <li>Функции, callback-функции</li>
     <li>Объекты, массивы, псевдомассивы и основы ООП</li>
     <li>Доступ к элементам на странице</li>
