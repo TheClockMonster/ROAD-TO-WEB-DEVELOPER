@@ -41,11 +41,27 @@ var Goo = {
 }
 
 
-var date = new Date();
+var date = new Date;
 
-date.setFullYear(2018,8,25);
+date.setFullYear(2018,2,28);
+date.setDate(-15);
+date.setHours(16,15,30);
+console.log(date);
+
+var start = new Date; // засекли время
+
+// что-то сделать
+for (var i = 0; i < 10000000; i++) {
+  var doSomething = 0;
+  doSomething += i * i * i;
+}
 
 
+
+var end = new Date;
+
+console.log("result:" + doSomething);
+console.log(end - start);
 
 
 
