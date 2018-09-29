@@ -63,7 +63,7 @@ var end = new Date;
 console.log("result:" + doSomething);
 console.log(end - start);
 
-
+console.log("hi");
 
 
 
