@@ -62,7 +62,6 @@ for (var i = 0; i < 10000000; i++) {
 
 
 
-
 //Возвращает новый массив из длин элементов исходного
 function stringLenhgths(arr){
 	arr.map(function(item,i,arr){
