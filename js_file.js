@@ -44,40 +44,115 @@ var Goo = {
 
 
 
-function makeBuffer(){
-	var bufferArr = [];
-
-	function buffer(){
-		return bufferArr;
-	}
-
-	buffer.add = function(){
-		for (var i = 0; i < arguments.length; i++){
-			bufferArr.push(arguments[i]);
-		}
-	}
-
-	buffer.clear = function(){
-		bufferArr.splice(0,bufferArr.length);
-	}
-
-	return buffer;
-}
-
-var buffer = makeBuffer();
-
-buffer.add("GGG",5,true,"ff",76,null);
-console.log(buffer());
-buffer.add("DADAYA");
-console.log(buffer());
-buffer.clear();
-console.log(buffer());
-buffer.add("ye","boi");
-console.log(buffer());
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Сортировка массива объектов по определнному полю объектов.
+// var users = [{
+// 	name: "Вася",
+// 	surname: 'Иванов',
+// 	age: 20
+//   }, {
+// 	name: "Петя",
+// 	surname: 'Чапаев',
+// 	age: 25
+//   }, {
+// 	name: "Маша",
+// 	surname: 'Медведева',
+// 	age: 18
+//   }];
+
+
+// users.sort(byField("age"));
+
+// users.forEach(function(item){
+// 	console.log(item);
+// });
+
+// function byField(field){
+
+// 	var check = users.every(function(item){
+// 		return field in item;
+// 	});
+	
+// 	if (!check){
+// 		console.log("field not finded");
+// 	}
+
+// 	else{
+// 		return function(a,b){
+// 			return a[field] > b[field] ? 1 : -1; 
+// 		}
+// 	}
+// }
+
+
+
+
+
+// Строковой буфер через вложенную функцию
+// function makeBuffer(){
+// 	var bufferArr = [];
+
+// 	function buffer(){
+// 		return bufferArr;
+// 	}
+
+// 	buffer.add = function(){
+// 		for (var i = 0; i < arguments.length; i++){
+// 			bufferArr.push(arguments[i]);
+// 		}
+// 	}
+
+// 	buffer.clear = function(){
+// 		bufferArr.splice(0,bufferArr.length);
+// 	}
+
+// 	return buffer;
+// }
+
+// var buffer = makeBuffer();
+
+// buffer.add("GGG",5,true,"ff",76,null);
+// console.log(buffer());
+// buffer.add("DADAYA");
+// console.log(buffer());
+// buffer.clear();
+// console.log(buffer());
+// buffer.add("ye","boi");
+// console.log(buffer());
 
 
 
