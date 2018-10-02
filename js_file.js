@@ -41,37 +41,29 @@ var Goo = {
 }
 
 
-function makeChecker(){
-	var checker = 0;
 
-	return {
-		getNext: function(){
-			return ++checker;
-		},
-		setChecker: function(value){
-			checker = value;
-		},
-		resetChecker: function(){
-			checker = 0;
-		},
-		getCheckerCount: function(){
-			return checker;
-		},
-	}
-}
 
-var checker1 = makeChecker();
-checker1.getNext();
-checker1.getNext();
-checker1.getNext();
-checker1.getNext();
-checker1.resetChecker();
-checker1.setChecker(5);
-checker1.getNext();
-checker1.getNext();
-checker1.getNext();
-checker1.getNext();
-console.log(checker1.getCheckerCount());
+// Строковой буфер. 
+// function makeBuffer(){
+// 	var bufferArr = [];
+
+// 	function buffer(){
+// 		return bufferArr;
+// 	}
+
+// 	buffer.add = function(){
+// 		for (var i = 0; i < arguments.length; i++){
+// 			bufferArr.push(arguments[i]);
+// 		}
+// 	}
+
+// 	return buffer;
+// }
+
+// var buffer = makeBuffer();
+
+// buffer.add("GGG",5,true,"ff",76,null);
+// console.log(buffer());
 
 
 
@@ -80,11 +72,55 @@ console.log(checker1.getCheckerCount());
 
 
 
+// Сумма двух чисел через вложенную функцию
+// function sum(a){
+// 	return function(b){
+// 		return a + b;
+// 	}
+// }
+
+// var res = sum(10)(-5);
+// console.log(res);
+
+
+
+
+// Чекер через объект
+// function makeChecker(){
+// 	var checker = 0;
+
+// 	return {
+// 		getNext: function(){
+// 			return ++checker;
+// 		},
+// 		setChecker: function(value){
+// 			checker = value;
+// 		},
+// 		resetChecker: function(){
+// 			checker = 0;
+// 		},
+// 		getCheckerCount: function(){
+// 			return checker;
+// 		},
+// 	}
+// }
 
 
 
 
 
+// var checker1 = makeChecker();
+// checker1.getNext();
+// checker1.getNext();
+// checker1.getNext();
+// checker1.getNext();
+// checker1.resetChecker();
+// checker1.setChecker(5);
+// checker1.getNext();
+// checker1.getNext();
+// checker1.getNext();
+// checker1.getNext();
+// console.log(checker1.getCheckerCount());
 
 
 
@@ -101,13 +137,6 @@ console.log(checker1.getCheckerCount());
 // var a = check();
 // console.log(a());
 // console.log(a());
-
-
-
-
-
-
-
 
 
 
