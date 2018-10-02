@@ -41,20 +41,70 @@ var Goo = {
 }
 
 
-var date = new Date;
+function makeChecker(){
+	var checker = 0;
 
-date.setFullYear(2018,2,28);
-date.setDate(-15);
-date.setHours(16,15,30);
-console.log(date);
-
-var start = new Date; // засекли время
-
-// что-то сделать
-for (var i = 0; i < 10000000; i++) {
-  var doSomething = 0;
-  doSomething += i * i * i;
+	return {
+		getNext: function(){
+			return ++checker;
+		},
+		setChecker: function(value){
+			checker = value;
+		},
+		resetChecker: function(){
+			checker = 0;
+		},
+		getCheckerCount: function(){
+			return checker;
+		},
+	}
 }
+
+var checker1 = makeChecker();
+checker1.getNext();
+checker1.getNext();
+checker1.getNext();
+checker1.getNext();
+checker1.resetChecker();
+checker1.setChecker(5);
+checker1.getNext();
+checker1.getNext();
+checker1.getNext();
+checker1.getNext();
+console.log(checker1.getCheckerCount());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Чекер. Замыкания
+// function check(){
+// 	var checker = 1;
+
+// 	return function(){
+// 		return checker += 5;
+// 	}
+// }
+
+// var a = check();
+// console.log(a());
+// console.log(a());
+
+
+
+
 
 
 
