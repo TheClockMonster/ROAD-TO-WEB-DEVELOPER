@@ -43,27 +43,37 @@ var Goo = {
 
 
 
-// Строковой буфер. 
-// function makeBuffer(){
-// 	var bufferArr = [];
 
-// 	function buffer(){
-// 		return bufferArr;
-// 	}
+function makeBuffer(){
+	var bufferArr = [];
 
-// 	buffer.add = function(){
-// 		for (var i = 0; i < arguments.length; i++){
-// 			bufferArr.push(arguments[i]);
-// 		}
-// 	}
+	function buffer(){
+		return bufferArr;
+	}
 
-// 	return buffer;
-// }
+	buffer.add = function(){
+		for (var i = 0; i < arguments.length; i++){
+			bufferArr.push(arguments[i]);
+		}
+	}
 
-// var buffer = makeBuffer();
+	buffer.clear = function(){
+		bufferArr.splice(0,bufferArr.length);
+	}
 
-// buffer.add("GGG",5,true,"ff",76,null);
-// console.log(buffer());
+	return buffer;
+}
+
+var buffer = makeBuffer();
+
+buffer.add("GGG",5,true,"ff",76,null);
+console.log(buffer());
+buffer.add("DADAYA");
+console.log(buffer());
+buffer.clear();
+console.log(buffer());
+buffer.add("ye","boi");
+console.log(buffer());
 
 
 
