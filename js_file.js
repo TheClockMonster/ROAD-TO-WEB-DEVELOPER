@@ -1,3 +1,4 @@
+
 var User = {
 	name: "Alex",
 	age: 16,
@@ -43,6 +44,15 @@ var Goo = {
 
 var user = {
 	name: "Steave",
+	number: 77,
+
+	valueOf: function(){
+		return this.number;
+	},
+
+	toString: function(){
+		return this.number + 1;
+	},
 
 	introduceYourself: function(){
 		console.log("Hi, my name is " + this.name);
@@ -53,7 +63,7 @@ var user = {
 		for (var key in this){
 			res[key] = this[key];
 		}
-		return res;newUser = user;
+		return res;
 	},
 
 	createNewLink: function(){
@@ -62,10 +72,8 @@ var user = {
 
 }
 
-function func(){
-	console.log("Я вывожусь в контексте обьекта, ", this);
-}
-func();
+
+console.log(+new Date());
 
 
 
@@ -94,6 +102,50 @@ func();
 
 
 
+// Чейнинг-вызовы
+// var ladder = {
+// 	step: 0,
+// 	up: function() { // вверх по лестнице
+// 	  this.step++;
+// 	  return this;
+// 	},
+// 	down: function() { // вниз по лестнице
+// 	  this.step--;
+// 	  return this;
+// 	},
+// 	showStep: function() { // вывести текущую ступеньку
+// 	  alert( this.step );
+// 	  return this;
+// 	}
+//   };
+
+//   ladder.up().up().up().down().showStep().down().up().up().showStep();
+
+
+
+// Простейший калькулятор
+// var calculator = {
+// 	read: function(){
+// 		this.value1 = +prompt("Enter the first number","");
+// 		this.value2 = +prompt("Enter the second number","");
+// 	},
+
+// 	sum: function(){
+// 		return this.value1 + this.value2;
+// 	},
+
+// 	mul: function(){
+// 		return this.value1 * this.value2;
+// 	},
+
+// 	div: function(){
+// 		return this.value1 / this.value2;
+// 	},
+
+// 	sub: function(){
+// 		return this.value1 - this.value2;
+// 	}
+// }
 
 
 
