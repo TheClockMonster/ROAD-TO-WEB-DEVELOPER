@@ -41,6 +41,31 @@ var Goo = {
 }
 
 
+var user = {
+	name: "Steave",
+
+	introduceYourself: function(){
+		console.log("Hi, my name is " + this.name);
+	},
+
+	copy: function(){
+		var res = [];
+		for (var key in this){
+			res[key] = this[key];
+		}
+		return res;newUser = user;
+	},
+
+	createNewLink: function(){
+		return (this);          //равнозначно присвоению ссылки
+	}
+
+}
+
+function func(){
+	console.log("Я вывожусь в контексте обьекта, ", this);
+}
+func();
 
 
 
@@ -73,8 +98,16 @@ var Goo = {
 
 
 
+// Среднее арифметическое
+// function average(){
+// 	var res = 0;
 
+// 	for (var i = 0; i < arguments.length; i++){
+// 		res += arguments[i];
+// 	}
 
+// 	return res / arguments.length;
+// }
 
 
 
