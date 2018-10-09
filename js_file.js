@@ -42,38 +42,6 @@ var Goo = {
 }
 
 
-var user = {
-	name: "Steave",
-	number: 77,
-
-	valueOf: function(){
-		return this.number;
-	},
-
-	toString: function(){
-		return this.number + 1;
-	},
-
-	introduceYourself: function(){
-		console.log("Hi, my name is " + this.name);
-	},
-
-	copy: function(){
-		var res = [];
-		for (var key in this){
-			res[key] = this[key];
-		}
-		return res;
-	},
-
-	createNewLink: function(){
-		return (this);          //равнозначно присвоению ссылки
-	}
-
-}
-
-
-console.log(+new Date());
 
 
 
