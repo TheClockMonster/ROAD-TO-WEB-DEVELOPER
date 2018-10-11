@@ -28,26 +28,7 @@ var Goo = {
 	weight: 5
 }
 
-function hypotenuse(a,b){
-	
-	if (a > 6) {
-	
-	function square(x){
-		return x * x;
-	}
 
-	function squareRoot(x){
-		return Math.sqrt(x);
-	}
-
-	return squareRoot(square(a) + square(b));
-
-	}
-
-	else return Math.sqrt((a*a) + (b*b));
-}
-
-console.log(hypotenuse(5,6));
 
 
 
