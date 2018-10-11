@@ -39,9 +39,6 @@ function User(name){
 var emil = new User("Emil");
 var sasha = new User("Alex");
 
-var x = emil.sayName;
-var y = [];
-var z = new Date();
 
 var toString = {}.toString;
 
