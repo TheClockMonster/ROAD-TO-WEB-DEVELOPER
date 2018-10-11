@@ -1,17 +1,4 @@
-
-var User = {
-	name: "Alex",
-	age: 16,
-	gender: "M",
-	"номер телефона": "+994513039896",
-	smartphone : {
-		model: "Samsung",
-		code: "J5 Prime",
-		price: 250
-	},
-	studyPlace: "School #20"
-};
-
+"use strict"
 
 var Admin = {
 	name: "Sam",
@@ -41,33 +28,42 @@ var Goo = {
 	weight: 5
 }
 
+function User(name){
+	this.name = name;
+
+	this.sayName = function(){
+		return this;
+	}
+}
+
+var emil = new User("Emil");
+var sasha = new User("Alex");
+
+var x = emil.sayName;
+var y = [];
+var z = new Date();
+
+var toString = {}.toString;
+
+alert(toString.call(emil));
 
 
 
 
 
 
+// Сумма элементов через arguments, преобразованного в полноценный массив
+function sum(){
+	let args = [].slice.call(arguments);
+	let sum = 0;
+
+	args.forEach(function(item){
+		sum += item;
+	});
+	return sum;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 // Чейнинг-вызовы
