@@ -1,38 +1,11 @@
 "use strict"
 
-var Admin = {
-	name: "Sam",
-	age: 30,
-	"номер телефона": "+994503223233",
-	smartphone : {
-		model: "iPhone",
-		code: "X",
-		price: 1200
-	},
-	studyPlace: null,
-};
+let x = Array.prototype.slice.call(document.body.children);
+x.pop();
 
-var Menu = {
-	width: 300,
-	height: 200,
-	content: "Italian food",
-	numberOfTitles: 20,
-	weight: 5
-}
-
-var Goo = {
-	width: 300,
-	height: 200,
-	content: "Italian food",
-	numberOfTitles: 20,
-	weight: 5
-}
-
-
-
-
-
-
+x.forEach(function(item){
+	item.innerHTML("ADAWD");
+});
 
 
 
