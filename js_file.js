@@ -1,23 +1,12 @@
 "use strict"
 
-let x = Array.prototype.slice.call(document.body.children);
-x.pop();
+Document.prototype.isEmpyElement = function(elem){
+	if(elem.childNodes.length == 0)
+		console.log("Element " + elem + " is empty");
+	else console.log(elem + " is not empty");
+}
 
-x.forEach(function(item){
-	item.innerHTML("ADAWD");
-});
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(document.body.children[0].previousSibling);
 
 
 
