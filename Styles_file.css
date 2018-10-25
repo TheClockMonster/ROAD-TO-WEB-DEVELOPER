@@ -1,4 +1,5 @@
-body{
+.content{
     background-color: azure;
+    text-decoration: line-through;
 }
 

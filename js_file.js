@@ -1,12 +1,17 @@
-"use strict"
-
-Document.prototype.isEmpyElement = function(elem){
-	if(elem.childNodes.length == 0)
-		console.log("Element " + elem + " is empty");
-	else console.log(elem + " is not empty");
+// function User(name,age){
+	// 	this.age = age;
+	// }
+	
+	// let x = new User("emil",20);
+	// 	this.name = name;
+	// console.log(console);
+	
+	
+function sayHi(){
+	console.log("hi");
 }
 
-console.log(document.body.children[0].previousSibling);
+console.log(sayHi.prototype)
 
 
 
@@ -33,6 +38,149 @@ console.log(document.body.children[0].previousSibling);
 
 
 
+
+
+
+
+
+
+
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Проверяет DOM-элемент на наличие детей
+function isEmptyElement(elem){
+
+	if(elem.firstChild === null)
+		console.log("Element " + elem + " is empty");
+
+	else console.log(elem + " is not empty");
+
+}
 
 
 
